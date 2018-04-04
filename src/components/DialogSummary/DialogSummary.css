@@ -1,0 +1,106 @@
+* {box-sizing: border-box;}
+body {
+    /*background: #f69a73;*/
+}
+.Decor {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto 0;
+    background: white;
+    border-radius: 30px;
+}
+.FormLeftDecoration,
+.FormRightDecoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #f69a73;
+    border-radius: 20px;
+}
+.FormLeftDecoration {
+    bottom: 60px;
+    left: -30px;
+}
+.FormRightDecoration {
+    top: 60px;
+    right: -30px;
+}
+.FormLeftDecoration:before,
+.FormLeftDecoration:after,
+.FormRightDecoration:before,
+.FormRightDecoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+}
+.FormLeftDecoration:before {top: -20px;}
+.FormLeftDecoration:after {
+    top: 20px;
+    left: 10px;
+}
+.FormRightDecoration:before {
+    top: -20px;
+    right: 0;
+}
+.FormRightDecoration:after {
+    top: 20px;
+    right: 10px;
+}
+.Circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+.FormInner {padding: 50px;}
+.FormInner input,
+.FormInner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.FormInner .Button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    margin-top: 30px;
+    background: #f69a73;
+    border-bottom: 4px solid #d87d56;
+    color: white;
+    font-size: 14px;
+    transition: all .3s;
+}
+.FormInner .Button:hover {
+    transform: translateY(-4px);
+}
+.FormInner textarea {resize: none;}
+.FormInner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+}
+input:focus {
+    outline: none;
+}
